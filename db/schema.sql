@@ -230,7 +230,7 @@ insert into site_settings (key, value) values
     "whatsapp": "393914895605",
     "instagram": "https://www.instagram.com/lameccanica/",
     "facebook": "https://www.facebook.com/arealameccanicanerviano",
-    "maps": "https://maps.google.com/?q=Via+Tagliamento+16A+Canegrate",
+    "maps": "https://www.google.com/maps/search/?api=1&query=La+Meccanica+Via+Tagliamento+16A+Canegrate",
     "coperto": "2,00 €",
     "paymentNote": "Carte di credito, Bancomat, Apple Pay e Satispay. Non si effettuano conti separati."
   }'::jsonb),

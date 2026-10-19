@@ -27,8 +27,8 @@ export function LocationSection() {
       <div className="shell">
         <SectionHeading
           eyebrow="Dove siamo"
-          title="Due passi dalla"
-          italic="stazione"
+          title="Ci trovi in"
+          italic="Via Tagliamento"
           description="A Canegrate, tra Legnano e Parabiago. Via Tagliamento 16A, con parcheggio in zona."
         />
 
@@ -38,7 +38,7 @@ export function LocationSection() {
             <div className="relative h-full min-h-[22rem] overflow-hidden rounded-[26px] border border-cream/10">
               <iframe
                 title="Mappa La Meccanica"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=8.9180%2C45.5680%2C8.9420%2C45.5820&layer=mapnik&marker=45.5750%2C8.9300"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=8.9220%2C45.5580%2C8.9480%2C45.5720&layer=mapnik&marker=45.5649%2C8.9350"
                 className="size-full min-h-[22rem] grayscale-[0.85] contrast-[1.05] invert-[0.92] hue-rotate-180"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

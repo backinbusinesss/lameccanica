@@ -21,7 +21,7 @@ export function EventsSection() {
           eyebrow="Eventi & live"
           title="La serata non"
           italic="finisce a cena"
-          description="Live music, DJ set, serate a tema e cene aziendali. Il calendario cambia spesso: qui trovi sempre cosa succede."
+          description="Live music, DJ set, serate a tema e cene aziendali. Il calendario cambia spesso: qui trovi sempre quello che c’è in programma."
           action={
             <Link to="/prenota" className="btn btn-ghost btn-sm">
               Prenota per un evento

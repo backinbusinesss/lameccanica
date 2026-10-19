@@ -72,19 +72,19 @@ const menu = [
   {
     category: "burgers",
     items: [
-      { name: "La Meccanica", description: "Doppio manzo 200g, cheddar stagionato, bacon croccante, cipolla caramellata, salsa Meccanica, pane brioche.", price: 15.5, featured: true, allergens: ["gluten", "milk", "eggs", "mustard", "sulphites"], image: "/assets/img/hero-burger.webp" },
-      { name: "Bacon Cheese", description: "Manzo 180g, doppio cheddar, bacon affumicato, cetriolini, senape e ketchup della casa.", price: 13.5, featured: true, allergens: ["gluten", "milk", "mustard", "sulphites"], image: "/assets/img/burger-bacon.webp" },
-      { name: "Double Smash", description: "Due smash patty 90g, formaggio americano, cipolla bianca, salsa speciale, pane tostato al burro.", price: 14.0, allergens: ["gluten", "milk", "eggs", "mustard"], image: "/assets/img/burger-double.webp" },
+      { name: "La Meccanica", description: "Doppio manzo 200 g, cheddar stagionato, bacon croccante, cipolla caramellata, salsa della casa, pane brioche.", price: 15.5, featured: true, allergens: ["gluten", "milk", "eggs", "mustard", "sulphites"], image: "/assets/img/hero-burger.webp" },
+      { name: "Bacon Cheese", description: "Manzo 180 g, doppio cheddar, bacon affumicato, cetriolini, senape e ketchup della casa.", price: 13.5, featured: true, allergens: ["gluten", "milk", "mustard", "sulphites"], image: "/assets/img/burger-bacon.webp" },
+      { name: "Double Smash", description: "Due smash patty da 90 g, formaggio americano, cipolla bianca, salsa speciale, pane tostato al burro.", price: 14.0, allergens: ["gluten", "milk", "eggs", "mustard"], image: "/assets/img/burger-double.webp" },
       { name: "Il Vegetariano", description: "Burger di ceci e barbabietola, avocado, pomodorini confit, maionese vegana, pane multicereali.", price: 13.0, vegetarian: true, vegan: false, allergens: ["gluten", "sesame"], image: "/assets/img/salad.webp" },
       { name: "Pollo Croccante", description: "Pollo fritto in buttermilk, slaw, pickles, maionese al lime e pepe.", price: 13.5, allergens: ["gluten", "milk", "eggs", "mustard"], image: "/assets/img/wings.webp" },
-      { name: "Fire & Smoke", description: "Manzo 180g, jalapeños, cheddar affumicato, salsa bbq piccante, anelli di cipolla fritti.", price: 14.5, spicy: true, allergens: ["gluten", "milk", "mustard", "sulphites"], image: "/assets/img/steak.webp" },
+      { name: "Fire & Smoke", description: "Manzo 180 g, jalapeños, cheddar affumicato, salsa BBQ piccante, anelli di cipolla fritti.", price: 14.5, spicy: true, allergens: ["gluten", "milk", "mustard", "sulphites"], image: "/assets/img/steak.webp" },
     ],
   },
   {
     category: "fritti",
     items: [
-      { name: "Patatine Meccanica", description: "Patatine rustiche con rosmarino, sale Maldon e maionese al tartufo.", price: 6.0, allergens: ["eggs", "mustard"], image: "/assets/img/fries.webp" },
-      { name: "Chicken Wings 8pz", description: "Alette di pollo glassate, salsa bbq o buffalo, sedano e dip al blue cheese.", price: 10.0, spicy: true, allergens: ["milk", "celery", "mustard"], image: "/assets/img/wings.webp" },
+      { name: "Patatine della Casa", description: "Patatine rustiche con rosmarino, sale Maldon e maionese al tartufo.", price: 6.0, allergens: ["eggs", "mustard"], image: "/assets/img/fries.webp" },
+      { name: "Chicken Wings (8 pz)", description: "Alette di pollo glassate, salsa BBQ o buffalo, sedano e dip al blue cheese.", price: 10.0, spicy: true, allergens: ["milk", "celery", "mustard"], image: "/assets/img/wings.webp" },
       { name: "Onion Rings", description: "Anelli di cipolla in pastella alla birra, salsa ranch.", price: 6.5, allergens: ["gluten", "milk", "eggs"], image: "/assets/img/fries.webp" },
       { name: "Mac & Cheese Bites", description: "Bocconcini di mac & cheese fritti, salsa al pomodoro affumicato.", price: 8.0, vegetarian: true, allergens: ["gluten", "milk", "eggs"], image: "/assets/img/fries.webp" },
       { name: "Nachos Sharing", description: "Nachos, cheddar fuso, guacamole, pico de gallo, jalapeños. Per due.", price: 12.0, vegetarian: true, spicy: true, allergens: ["milk"], image: "/assets/img/fries.webp" },
@@ -96,16 +96,16 @@ const menu = [
       { name: "Carbonara della Casa", description: "Spaghettone, guanciale croccante, pecorino romano, tuorlo d'uovo e pepe nero.", price: 13.0, allergens: ["gluten", "eggs", "milk"], image: "/assets/img/pasta.webp" },
       { name: "Amatriciana", description: "Mezze maniche, pomodoro San Marzano, guanciale, pecorino, peperoncino.", price: 12.5, spicy: true, allergens: ["gluten", "milk"], image: "/assets/img/pasta.webp" },
       { name: "Pesto & Burrata", description: "Trofie, pesto genovese, burrata pugliese, pomodorini, pinoli tostati.", price: 13.5, vegetarian: true, allergens: ["gluten", "milk", "nuts"], image: "/assets/img/pasta.webp" },
-      { name: "Mac & Cheese", description: "Pasta corta, blend di quattro formaggi, crosta di pane alle erbe.", price: 11.0, vegetarian: true, allergens: ["gluten", "milk"], image: "/assets/img/pasta.webp" },
+      { name: "Mac & Cheese", description: "Pasta corta, quattro formaggi, crosta di pane alle erbe.", price: 11.0, vegetarian: true, allergens: ["gluten", "milk"], image: "/assets/img/pasta.webp" },
     ],
   },
   {
     category: "secondi",
     items: [
-      { name: "Tagliata 300g", description: "Controfiletto alla brace, rucola, scaglie di grana, riduzione al balsamico.", price: 22.0, allergens: ["milk", "sulphites"], image: "/assets/img/steak.webp" },
-      { name: "Ribs BBQ", description: "Costine di maiale marinate 12 ore, glassa bbq, slaw e patate al forno.", price: 18.0, allergens: ["mustard", "sulphites"], image: "/assets/img/steak.webp" },
+      { name: "Tagliata 300 g", description: "Controfiletto alla brace, rucola, scaglie di grana, riduzione al balsamico.", price: 22.0, allergens: ["milk", "sulphites"], image: "/assets/img/steak.webp" },
+      { name: "Ribs BBQ", description: "Costine di maiale marinate 12 ore, glassa BBQ, slaw e patate al forno.", price: 18.0, allergens: ["mustard", "sulphites"], image: "/assets/img/steak.webp" },
       { name: "Salmone alla Brace", description: "Filetto di salmone, burro al limone, verdure grigliate.", price: 19.0, glutenFree: true, allergens: ["fish", "milk"], image: "/assets/img/steak.webp" },
-      { name: "Caesar Salad", description: "Lattuga romana, pollo grigliato, crostini, parmigiano, dressing Caesar.", price: 12.0, allergens: ["gluten", "milk", "eggs", "fish", "mustard"], image: "/assets/img/salad.webp" },
+      { name: "Caesar Salad", description: "Lattuga romana, pollo grigliato, crostini, parmigiano, condimento Caesar.", price: 12.0, allergens: ["gluten", "milk", "eggs", "fish", "mustard"], image: "/assets/img/salad.webp" },
     ],
   },
   {
@@ -119,7 +119,7 @@ const menu = [
   {
     category: "cocktail",
     items: [
-      { name: "Meccanica Sour", description: "Bourbon, limone, sciroppo d'acero, albume, bitter. Il nostro signature.", price: 9.0, featured: true, allergens: ["eggs"], image: "/assets/img/cocktail.webp" },
+      { name: "Meccanica Sour", description: "Bourbon, limone, sciroppo d'acero, albume, bitter. La nostra firma.", price: 9.0, featured: true, allergens: ["eggs"], image: "/assets/img/cocktail.webp" },
       { name: "Negroni", description: "Gin, Campari, vermouth rosso. Servito con scorza d'arancia.", price: 8.0, allergens: ["sulphites"], image: "/assets/img/cocktail.webp" },
       { name: "Spritz", description: "Aperol, prosecco, soda, arancia.", price: 6.0, allergens: ["sulphites"], image: "/assets/img/cocktail.webp" },
       { name: "Espresso Martini", description: "Vodka, liquore al caffè, espresso, zucchero.", price: 9.0, image: "/assets/img/cocktail.webp" },
@@ -129,19 +129,19 @@ const menu = [
   {
     category: "birre",
     items: [
-      { name: "Birra Chiara alla Spina", description: "Lager italiana, 0,4l. Fresca, secca, facile.", price: 3.5, glutenFree: false, allergens: ["gluten"], image: "/assets/img/beer.webp" },
-      { name: "IPA Artigianale", description: "Luppolata, agrumata, 0,33l. Rotazione settimanale.", price: 5.5, featured: true, allergens: ["gluten"], image: "/assets/img/beer.webp" },
-      { name: "Weiss", description: "Grano, banana e chiodi di garofano. 0,5l.", price: 5.0, allergens: ["gluten"], image: "/assets/img/beer.webp" },
-      { name: "Stout", description: "Caffè, cacao, tostato. 0,33l.", price: 6.0, allergens: ["gluten"], image: "/assets/img/beer.webp" },
+      { name: "Birra Chiara alla Spina", description: "Lager italiana, 0,4 l. Fresca, secca, facile.", price: 3.5, glutenFree: false, allergens: ["gluten"], image: "/assets/img/beer.webp" },
+      { name: "IPA Artigianale", description: "Luppolata, agrumata, 0,33 l. Rotazione settimanale.", price: 5.5, featured: true, allergens: ["gluten"], image: "/assets/img/beer.webp" },
+      { name: "Weiss", description: "Grano, banana e chiodi di garofano. 0,5 l.", price: 5.0, allergens: ["gluten"], image: "/assets/img/beer.webp" },
+      { name: "Stout", description: "Caffè, cacao, tostato. 0,33 l.", price: 6.0, allergens: ["gluten"], image: "/assets/img/beer.webp" },
     ],
   },
   {
     category: "vini",
     items: [
-      { name: "Chianti Classico", description: "Sangiovese, ciliegia, spezie. Calice 0,15l.", price: 5.0, allergens: ["sulphites"], image: "/assets/img/whiskey.webp" },
-      { name: "Prosecco DOC", description: "Bollicine secche, mela verde. Calice 0,15l.", price: 4.5, allergens: ["sulphites"], image: "/assets/img/whiskey.webp" },
-      { name: "Pinot Grigio", description: "Fresco, minerale. Calice 0,15l.", price: 4.5, allergens: ["sulphites"], image: "/assets/img/whiskey.webp" },
-      { name: "Bottiglia Rossa Riserva", description: "Rosso strutturato, 0,75l. Per la brace.", price: 24.0, allergens: ["sulphites"], image: "/assets/img/whiskey.webp" },
+      { name: "Chianti Classico", description: "Sangiovese, ciliegia, spezie. Calice 0,15 l.", price: 5.0, allergens: ["sulphites"], image: "/assets/img/whiskey.webp" },
+      { name: "Prosecco DOC", description: "Bollicine secche, mela verde. Calice 0,15 l.", price: 4.5, allergens: ["sulphites"], image: "/assets/img/whiskey.webp" },
+      { name: "Pinot Grigio", description: "Fresco, minerale. Calice 0,15 l.", price: 4.5, allergens: ["sulphites"], image: "/assets/img/whiskey.webp" },
+      { name: "Bottiglia Rossa Riserva", description: "Rosso strutturato, 0,75 l. Per la brace.", price: 24.0, allergens: ["sulphites"], image: "/assets/img/whiskey.webp" },
     ],
   },
 ];

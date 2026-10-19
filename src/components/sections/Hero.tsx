@@ -57,7 +57,7 @@ export function Hero() {
         <img
           ref={imageRef}
           src={hero?.image || FALLBACK_IMAGE}
-          alt="Burger artigianale de La Meccanica"
+          alt="Burger artigianale della Meccanica"
           fetchPriority="high"
           onLoad={() => setLoaded(true)}
           className={`size-full object-cover transition-[transform,opacity] duration-[1400ms] ease-out ${

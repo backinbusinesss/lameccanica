@@ -21,7 +21,7 @@ export function Footer() {
             <Logo />
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-dim">
               {venue?.claim ??
-                "C’è sempre un buon motivo per vivere La Meccanica. Burger, cocktail e live music a Canegrate."}
+                "C’è sempre un buon motivo per vivere la Meccanica. Burger, cocktail e live music a Canegrate."}
             </p>
             <div className="mt-7 flex items-center gap-3">
               {venue?.instagram && (

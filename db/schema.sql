@@ -196,12 +196,12 @@ create table if not exists newsletter_subscribers (
 
 -- ---------------------------------------------------------------- seed
 insert into categories (slug, name, tagline, description, kind, emoji, sort_order) values
-  ('burgers',   'Le Burger',        'Macinato di manzo, pane artigianale, fuoco vero', 'Il cuore de La Meccanica: burger costruiti strato per strato, con carne selezionata e pane tostato al burro.', 'food', '🍔', 1),
+  ('burgers',   'I Burger',        'Macinato di manzo, pane artigianale, fuoco vero', 'Il cuore della Meccanica: burger costruiti strato per strato, con carne selezionata e pane tostato al burro.', 'food', '🍔', 1),
   ('fritti',    'Fritti & Sharing', 'Da dividere (o no)', 'Croccanti fuori, morbidi dentro. Il modo migliore per iniziare la serata.', 'food', '🍟', 2),
   ('primi',     'Primi & Comfort',  'La pasta che consola', 'Ricette italiane con un accento americano, cottura al punto giusto.', 'food', '🍝', 3),
   ('secondi',   'Dal Fuoco',        'Griglia, brace, carattere', 'Tagli e secondi cotti alla brace, serviti con contorni generosi.', 'food', '🔥', 4),
   ('dolci',     'Dolci',            'Il finale che merita', 'Dessert fatti in casa, da condividere o difendere con i denti.', 'food', '🍰', 5),
-  ('cocktail',  'Cocktail',         'Mixology da dopo lavoro', 'Classici ben fatti e signature della casa, dietro al bancone fino a tardi.', 'drink', '🍸', 6),
+  ('cocktail',  'Cocktail',         'Classici e firme della casa', 'Classici ben fatti e ricette della casa, dietro al bancone fino a tardi.', 'drink', '🍸', 6),
   ('birre',     'Birre',            'Alla spina, in bottiglia, in lattina', 'Selezione di artigianali italiane ed europee, sempre in rotazione.', 'drink', '🍺', 7),
   ('vini',      'Vini & Bollicine', 'Carta corta, scelta giusta', 'Etichette indipendenti, bollicine per brindare, rossi da brace.', 'drink', '🍷', 8)
 on conflict (slug) do nothing;
@@ -215,14 +215,14 @@ on conflict do nothing;
 
 insert into events (title, subtitle, description, image_url, event_date, event_time, badge, cta_label, sort_order) values
   ('Rugby, Music & Love', 'Il sabato sera alla Meccanica', 'Live music, DJ set e cocktail bar. La partita finisce, la serata comincia.', '/assets/img/live.webp', null, '22:00', 'Ogni sabato', 'Prenota il tuo tavolo', 1),
-  ('Cene aziendali', 'Natale, team building, compleanni', 'Menu dedicati, spazi riservati e un service che non fa rimpiangere la sala riunioni.', '/assets/img/event.webp', null, 'Su prenotazione', 'Su misura', 'Richiedi un preventivo', 2)
+  ('Cene aziendali', 'Natale, team building, compleanni', 'Menù dedicati, spazi riservati e un servizio che non fa rimpiangere la sala riunioni.', '/assets/img/event.webp', null, 'Su prenotazione', 'Su misura', 'Richiedi un preventivo', 2)
 on conflict do nothing;
 
 insert into site_settings (key, value) values
   ('venue', '{
     "name": "La Meccanica",
-    "tagline": "Burger, cocktail & live music",
-    "claim": "C’è sempre un buon motivo per vivere La Meccanica.",
+    "tagline": "Ristorante, hamburgeria & cocktail bar",
+    "claim": "C’è sempre un buon motivo per vivere la Meccanica.",
     "address": "Via Tagliamento 16A, 20039 Canegrate (MI)",
     "phone": "0331 055605",
     "phoneAlt": "379 228 4180",
@@ -250,8 +250,8 @@ insert into site_settings (key, value) values
     "maxParty": 10
   }'::jsonb),
   ('seo', '{
-    "title": "La Meccanica — Burger, cocktail e live music a Canegrate",
-    "description": "Ristorante e hamburgeria a Canegrate (MI). Burger artigianali, cocktail, birre artigianali e live music. Prenota online il tuo tavolo."
+    "title": "La Meccanica — Ristorante, hamburgeria e cocktail bar a Canegrate",
+    "description": "La Meccanica a Canegrate (MI): burger artigianali, cocktail, birre artigianali e live music. Menu con allergeni e prenotazione online."
   }'::jsonb)
 on conflict (key) do nothing;
 
@@ -259,7 +259,7 @@ insert into gallery_images (url, caption, sort_order) values
   ('/assets/img/interior.webp', 'La sala', 1),
   ('/assets/img/bar.webp', 'Il bancone', 2),
   ('/assets/img/burger-double.webp', 'Double stack', 3),
-  ('/assets/img/cocktail.webp', 'Signature cocktail', 4),
+  ('/assets/img/cocktail.webp', 'Cocktail della casa', 4),
   ('/assets/img/live.webp', 'Live music', 5),
   ('/assets/img/fries.webp', 'Fritti', 6)
 on conflict do nothing;

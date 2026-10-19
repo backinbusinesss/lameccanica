@@ -126,7 +126,7 @@ function PromosPanel() {
       {loading ? (
         <Spinner className="mx-auto my-10 text-ember" />
       ) : promos.length === 0 ? (
-        <EmptyState title="Nessuna promo" description="Aggiungi un’offerta e comparirà subito in home." />
+        <EmptyState title="Nessuna promo" description="Aggiungi un’offerta e comparirà subito nella home." />
       ) : (
         <div className="grid gap-3 md:grid-cols-2">
           {promos.map((promo) => (
@@ -330,7 +330,7 @@ function EventsPanel() {
       {loading ? (
         <Spinner className="mx-auto my-10 text-ember" />
       ) : events.length === 0 ? (
-        <EmptyState title="Nessun evento" description="Crea una serata e pubblicala in home." />
+        <EmptyState title="Nessun evento" description="Crea una serata e pubblicala nella home." />
       ) : (
         <div className="space-y-2">
           {events.map((event) => (

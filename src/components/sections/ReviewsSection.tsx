@@ -43,7 +43,7 @@ export function ReviewsSection() {
               </span>
             </div>
             <p className="mt-4 max-w-sm text-[0.9rem] leading-relaxed text-dim">
-              Dal 2014 a Nerviano, oggi a Canegrate: la stessa idea di serata, in una location nuova.
+              Dal 2014 a Nerviano, oggi a Canegrate: la stessa idea di serata, in un locale nuovo.
             </p>
             <a
               href={venue?.maps}

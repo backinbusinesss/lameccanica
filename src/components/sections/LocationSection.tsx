@@ -29,7 +29,7 @@ export function LocationSection() {
           eyebrow="Dove siamo"
           title="Ci trovi in"
           italic="Via Tagliamento"
-          description="A Canegrate, tra Legnano e Parabiago. Via Tagliamento 16A, con parcheggio in zona."
+          description="A Canegrate, tra Legnano e Parabiago, con parcheggio in zona."
         />
 
         <div className="mt-12 grid gap-5 lg:grid-cols-12">

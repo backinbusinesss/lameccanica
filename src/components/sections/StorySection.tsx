@@ -8,7 +8,7 @@ const STATS = [
   { value: "2014", label: "L’anno in cui è cominciato tutto" },
   { value: "14", label: "Allergeni sempre dichiarati" },
   { value: "02:30", label: "L’ultimo giro del venerdì" },
-  { value: "1", label: "Indirizzo, a Canegrate" },
+  { value: "2,00 €", label: "Servizio e coperto" },
 ];
 
 export function StorySection() {
@@ -29,7 +29,7 @@ export function StorySection() {
             <Reveal className="relative z-10 overflow-hidden rounded-[28px] border border-cream/12">
               <img
                 src={gallery[0]?.url ?? "/assets/img/interior.webp"}
-                alt="La sala de La Meccanica"
+                alt="La sala della Meccanica"
                 loading="lazy"
                 className="aspect-[4/5] w-full object-cover"
               />
@@ -110,7 +110,7 @@ export function StorySection() {
             <Quote className="absolute -top-2 right-6 size-24 text-cream/5" />
             <blockquote className="relative max-w-3xl">
               <p className="font-display text-[clamp(1.5rem,3.2vw,2.6rem)] leading-[1.15] text-cream/90">
-                “C’è sempre un buon motivo per vivere La Meccanica.”
+                “C’è sempre un buon motivo per vivere la Meccanica.”
               </p>
               <footer className="mt-5 text-[0.68rem] font-bold tracking-[0.22em] text-ember uppercase">
                 {venue?.name ?? "La Meccanica"} · Canegrate

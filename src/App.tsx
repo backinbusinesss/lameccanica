@@ -71,7 +71,7 @@ function SiteShell() {
         <div className="flex flex-col items-center gap-4">
           <Spinner className="size-6 text-ember" />
           <p className="text-[0.6rem] font-bold tracking-[0.3em] text-dim uppercase">
-            La Maccanica
+            La Meccanica
           </p>
         </div>
       </div>

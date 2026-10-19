@@ -5,10 +5,10 @@ import { Reveal } from "../Reveal";
 import { Marquee } from "../Marquee";
 
 const STATS = [
-  { value: "2015", label: "Da quando accendiamo il fuoco" },
-  { value: "180g", label: "Il nostro patty di manzo" },
+  { value: "2014", label: "L’anno in cui è cominciato tutto" },
   { value: "14", label: "Allergeni sempre dichiarati" },
   { value: "02:30", label: "L’ultimo giro del venerdì" },
+  { value: "1", label: "Indirizzo, a Canegrate" },
 ];
 
 export function StorySection() {
@@ -29,7 +29,7 @@ export function StorySection() {
             <Reveal className="relative z-10 overflow-hidden rounded-[28px] border border-cream/12">
               <img
                 src={gallery[0]?.url ?? "/assets/img/interior.webp"}
-                alt="La sala de La Maccanica"
+                alt="La sala de La Meccanica"
                 loading="lazy"
                 className="aspect-[4/5] w-full object-cover"
               />
@@ -55,7 +55,7 @@ export function StorySection() {
 
           <div>
             <Reveal>
-              <span className="eyebrow">La Maccanica</span>
+              <span className="eyebrow">La Meccanica</span>
               <h2 className="mt-4 text-[clamp(2.3rem,5vw,4.2rem)]">
                 Non è un ristorante.
                 <br />
@@ -66,12 +66,12 @@ export function StorySection() {
             <Reveal delay={100}>
               <div className="mt-6 space-y-4 text-[0.95rem] leading-relaxed text-dim">
                 <p>
-                  A Canegrate, a due passi dalla stazione, c’è un capannone che profuma di brace,
-                  luppolo e serate lunghe. Abbiamo iniziato con un piano di lavoro, una piastra e
-                  l’idea che un burger potesse essere una cosa seria.
+                  Dal 2014 a Nerviano, da qualche anno a Canegrate: siamo cresciuti, il locale è
+                  cambiato, l’idea è rimasta la stessa. Burger fatti sul serio, cocktail dietro al
+                  bancone e musica che tiene la gente seduta più del previsto.
                 </p>
                 <p>
-                  Oggi La Maccanica è ristorante, hamburgeria, cocktail bar e palco. La cucina
+                  Oggi La Meccanica è ristorante, hamburgeria, cocktail bar e palco. La cucina
                   lavora con carne selezionata e pane artigianale, il bancone gira fino a notte, e
                   il sabato la musica prende il sopravvento.
                 </p>
@@ -110,10 +110,10 @@ export function StorySection() {
             <Quote className="absolute -top-2 right-6 size-24 text-cream/5" />
             <blockquote className="relative max-w-3xl">
               <p className="font-display text-[clamp(1.5rem,3.2vw,2.6rem)] leading-[1.15] text-cream/90">
-                “C’è sempre un buon motivo per vivere la Maccanica.”
+                “C’è sempre un buon motivo per vivere La Meccanica.”
               </p>
               <footer className="mt-5 text-[0.68rem] font-bold tracking-[0.22em] text-ember uppercase">
-                {venue?.name ?? "La Maccanica"} · Canegrate
+                {venue?.name ?? "La Meccanica"} · Canegrate
               </footer>
             </blockquote>
           </div>

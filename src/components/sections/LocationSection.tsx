@@ -37,7 +37,7 @@ export function LocationSection() {
           <Reveal className="lg:col-span-7">
             <div className="relative h-full min-h-[22rem] overflow-hidden rounded-[26px] border border-cream/10">
               <iframe
-                title="Mappa La Maccanica"
+                title="Mappa La Meccanica"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=8.9180%2C45.5680%2C8.9420%2C45.5820&layer=mapnik&marker=45.5750%2C8.9300"
                 className="size-full min-h-[22rem] grayscale-[0.85] contrast-[1.05] invert-[0.92] hue-rotate-180"
                 loading="lazy"

@@ -1,4 +1,4 @@
--- La Maccanica — schema database
+-- La Meccanica — schema database
 -- Esegui con: npm run db:setup
 -- Idempotente: puoi rilanciarlo senza perdere dati.
 
@@ -196,7 +196,7 @@ create table if not exists newsletter_subscribers (
 
 -- ---------------------------------------------------------------- seed
 insert into categories (slug, name, tagline, description, kind, emoji, sort_order) values
-  ('burgers',   'Le Burger',        'Macinato di manzo, pane artigianale, fuoco vero', 'Il cuore della Maccanica: burger costruiti strato per strato, con carne selezionata e pane tostato al burro.', 'food', '🍔', 1),
+  ('burgers',   'Le Burger',        'Macinato di manzo, pane artigianale, fuoco vero', 'Il cuore de La Meccanica: burger costruiti strato per strato, con carne selezionata e pane tostato al burro.', 'food', '🍔', 1),
   ('fritti',    'Fritti & Sharing', 'Da dividere (o no)', 'Croccanti fuori, morbidi dentro. Il modo migliore per iniziare la serata.', 'food', '🍟', 2),
   ('primi',     'Primi & Comfort',  'La pasta che consola', 'Ricette italiane con un accento americano, cottura al punto giusto.', 'food', '🍝', 3),
   ('secondi',   'Dal Fuoco',        'Griglia, brace, carattere', 'Tagli e secondi cotti alla brace, serviti con contorni generosi.', 'food', '🔥', 4),
@@ -214,19 +214,19 @@ insert into promos (title, description, badge, day_of_week, sort_order) values
 on conflict do nothing;
 
 insert into events (title, subtitle, description, image_url, event_date, event_time, badge, cta_label, sort_order) values
-  ('Rugby, Music & Love', 'Il sabato sera alla Maccanica', 'Live music, DJ set e cocktail bar. La partita finisce, la serata comincia.', '/assets/img/live.webp', null, '22:00', 'Ogni sabato', 'Prenota il tuo tavolo', 1),
+  ('Rugby, Music & Love', 'Il sabato sera alla Meccanica', 'Live music, DJ set e cocktail bar. La partita finisce, la serata comincia.', '/assets/img/live.webp', null, '22:00', 'Ogni sabato', 'Prenota il tuo tavolo', 1),
   ('Cene aziendali', 'Natale, team building, compleanni', 'Menu dedicati, spazi riservati e un service che non fa rimpiangere la sala riunioni.', '/assets/img/event.webp', null, 'Su prenotazione', 'Su misura', 'Richiedi un preventivo', 2)
 on conflict do nothing;
 
 insert into site_settings (key, value) values
   ('venue', '{
-    "name": "La Maccanica",
+    "name": "La Meccanica",
     "tagline": "Burger, cocktail & live music",
-    "claim": "C’è sempre un buon motivo per vivere la Maccanica.",
+    "claim": "C’è sempre un buon motivo per vivere La Meccanica.",
     "address": "Via Tagliamento 16A, 20039 Canegrate (MI)",
     "phone": "0331 055605",
     "phoneAlt": "379 228 4180",
-    "email": "info@lamaccanica.it",
+    "email": "info@arealameccanica.com",
     "whatsapp": "393914895605",
     "instagram": "https://www.instagram.com/lameccanica/",
     "facebook": "https://www.facebook.com/arealameccanicanerviano",
@@ -235,9 +235,9 @@ insert into site_settings (key, value) values
     "paymentNote": "Carte di credito, Bancomat, Apple Pay e Satispay. Non si effettuano conti separati."
   }'::jsonb),
   ('hero', '{
-    "kicker": "Canegrate · dal 2015",
+    "kicker": "Canegrate · dal 2014",
     "title": "Carne vera. Fuoco vero. Notte vera.",
-    "subtitle": "Burger artigianali, cocktail firmati e live music fino a tardi. La Maccanica è il posto dove la cena diventa serata.",
+    "subtitle": "Burger artigianali, cocktail firmati e live music fino a tardi. La Meccanica è il posto dove la cena diventa serata.",
     "primaryCta": "Prenota un tavolo",
     "secondaryCta": "Scopri il menu",
     "image": "/assets/img/hero-burger.webp",
@@ -250,7 +250,7 @@ insert into site_settings (key, value) values
     "maxParty": 10
   }'::jsonb),
   ('seo', '{
-    "title": "La Maccanica — Burger, cocktail e live music a Canegrate",
+    "title": "La Meccanica — Burger, cocktail e live music a Canegrate",
     "description": "Ristorante e hamburgeria a Canegrate (MI). Burger artigianali, cocktail, birre artigianali e live music. Prenota online il tuo tavolo."
   }'::jsonb)
 on conflict (key) do nothing;

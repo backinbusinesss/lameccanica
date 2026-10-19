@@ -21,7 +21,7 @@ export function Footer() {
             <Logo />
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-dim">
               {venue?.claim ??
-                "C’è sempre un buon motivo per vivere la Maccanica. Burger, cocktail e live music a Canegrate."}
+                "C’è sempre un buon motivo per vivere La Meccanica. Burger, cocktail e live music a Canegrate."}
             </p>
             <div className="mt-7 flex items-center gap-3">
               {venue?.instagram && (
@@ -101,7 +101,7 @@ export function Footer() {
               <li className="flex gap-3">
                 <Mail className="mt-0.5 size-4 shrink-0 text-ember" />
                 <a href={`mailto:${venue?.email}`} className="link-underline">
-                  {venue?.email ?? "info@lamaccanica.it"}
+                  {venue?.email ?? "info@arealameccanica.com"}
                 </a>
               </li>
             </ul>
@@ -112,7 +112,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-4 border-t border-cream/10 pt-6 text-[0.68rem] text-dim/70 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} La Maccanica · P.IVA 08391580969</p>
+          <p>© {new Date().getFullYear()} La Meccanica · P.IVA 08391580969</p>
           <div className="flex items-center gap-5">
             <Link to="/privacy" className="link-underline">
               Privacy

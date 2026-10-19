@@ -8,7 +8,7 @@ import { useContent } from "@/lib/content";
 
 const LINKS = [
   { label: "Menu", href: "#menu" },
-  { label: "La Maccanica", href: "#storia" },
+  { label: "La Meccanica", href: "#storia" },
   { label: "Eventi", href: "#eventi" },
   { label: "Promo", href: "#promo" },
   { label: "Dove siamo", href: "#dove-siamo" },
@@ -63,7 +63,7 @@ export function Header() {
             <a
               href={`tel:${phone.replace(/\s/g, "")}`}
               className="grid size-10 place-items-center rounded-full border border-cream/20 text-cream/80 transition-colors hover:border-ember/60 hover:text-ember"
-              aria-label="Chiama La Maccanica"
+              aria-label="Chiama La Meccanica"
             >
               <Phone className="size-4" />
             </a>

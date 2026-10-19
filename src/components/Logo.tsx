@@ -11,7 +11,7 @@ export function Logo({
   return (
     <Link
       to="/"
-      aria-label="La Maccanica — home"
+      aria-label="La Meccanica — home"
       className={cn("group inline-flex items-center gap-3", className)}
     >
       <span className="relative grid size-10 place-items-center rounded-full border border-cream/25 bg-cream/5 transition-colors duration-500 group-hover:border-ember/70">
@@ -30,7 +30,7 @@ export function Logo({
       </span>
       <span className="flex flex-col leading-none">
         <span className="font-display text-[1.02rem] font-semibold tracking-[-0.02em] text-cream">
-          La Maccanica
+          La Meccanica
         </span>
         {!compact && (
           <span className="mt-1 text-[0.52rem] font-bold uppercase tracking-[0.34em] text-dim">

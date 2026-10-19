@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowDown, ArrowUpRight, Clock, Star } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Clock, Music2 } from "lucide-react";
 import { useContent } from "@/lib/content";
 import { scrollToId } from "@/lib/utils";
 import { Marquee } from "../Marquee";
@@ -57,7 +57,7 @@ export function Hero() {
         <img
           ref={imageRef}
           src={hero?.image || FALLBACK_IMAGE}
-          alt="Burger artigianale de La Maccanica"
+          alt="Burger artigianale de La Meccanica"
           fetchPriority="high"
           onLoad={() => setLoaded(true)}
           className={`size-full object-cover transition-[transform,opacity] duration-[1400ms] ease-out ${
@@ -86,8 +86,8 @@ export function Hero() {
               {isOpen ? "Aperto ora" : "Chiuso · prenota online"}
             </span>
             <span className="inline-flex items-center gap-1.5 text-[0.62rem] font-bold tracking-[0.22em] text-dim uppercase">
-              <Star className="size-3 fill-ember text-ember" />
-              4,7 · 2.400+ recensioni
+              <Music2 className="size-3 text-ember" />
+              Live music · DJ set · Cocktail bar
             </span>
           </div>
 
@@ -111,7 +111,7 @@ export function Hero() {
             }}
           >
             {hero?.subtitle ??
-              "Burger artigianali, cocktail firmati e live music fino a tardi. La Maccanica è il posto dove la cena diventa serata."}
+              "Burger artigianali, cocktail firmati e live music fino a tardi. La Meccanica è il posto dove la cena diventa serata."}
           </p>
 
           <div

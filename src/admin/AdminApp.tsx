@@ -93,7 +93,7 @@ export function AdminApp() {
                   className="field"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="admin@lamaccanica.it"
+                  placeholder="admin@arealameccanica.com"
                 />
               </div>
               <div>

@@ -56,13 +56,13 @@ for (const statement of statements) {
 console.log(`✓ Schema pronto (${statements.length} comandi)`);
 
 // ---------------------------------------------------------------- admin
-const email = process.env.ADMIN_EMAIL || "admin@lamaccanica.it";
-const password = process.env.ADMIN_PASSWORD || "Maccanica2026!";
+const email = process.env.ADMIN_EMAIL || "admin@arealameccanica.com";
+const password = process.env.ADMIN_PASSWORD || "Meccanica2026!";
 const hash = await bcrypt.hash(password, 12);
 
 await sql`
   insert into admin_users (email, password_hash, name)
-  values (${email.toLowerCase()}, ${hash}, 'La Maccanica')
+  values (${email.toLowerCase()}, ${hash}, 'La Meccanica')
   on conflict (email) do update set password_hash = excluded.password_hash
 `;
 console.log(`✓ Admin: ${email}`);
@@ -72,7 +72,7 @@ const menu = [
   {
     category: "burgers",
     items: [
-      { name: "La Maccanica", description: "Doppio manzo 200g, cheddar stagionato, bacon croccante, cipolla caramellata, salsa Maccanica, pane brioche.", price: 15.5, featured: true, allergens: ["gluten", "milk", "eggs", "mustard", "sulphites"], image: "/assets/img/hero-burger.webp" },
+      { name: "La Meccanica", description: "Doppio manzo 200g, cheddar stagionato, bacon croccante, cipolla caramellata, salsa Meccanica, pane brioche.", price: 15.5, featured: true, allergens: ["gluten", "milk", "eggs", "mustard", "sulphites"], image: "/assets/img/hero-burger.webp" },
       { name: "Bacon Cheese", description: "Manzo 180g, doppio cheddar, bacon affumicato, cetriolini, senape e ketchup della casa.", price: 13.5, featured: true, allergens: ["gluten", "milk", "mustard", "sulphites"], image: "/assets/img/burger-bacon.webp" },
       { name: "Double Smash", description: "Due smash patty 90g, formaggio americano, cipolla bianca, salsa speciale, pane tostato al burro.", price: 14.0, allergens: ["gluten", "milk", "eggs", "mustard"], image: "/assets/img/burger-double.webp" },
       { name: "Il Vegetariano", description: "Burger di ceci e barbabietola, avocado, pomodorini confit, maionese vegana, pane multicereali.", price: 13.0, vegetarian: true, vegan: false, allergens: ["gluten", "sesame"], image: "/assets/img/salad.webp" },
@@ -83,7 +83,7 @@ const menu = [
   {
     category: "fritti",
     items: [
-      { name: "Patatine Maccanica", description: "Patatine rustiche con rosmarino, sale Maldon e maionese al tartufo.", price: 6.0, allergens: ["eggs", "mustard"], image: "/assets/img/fries.webp" },
+      { name: "Patatine Meccanica", description: "Patatine rustiche con rosmarino, sale Maldon e maionese al tartufo.", price: 6.0, allergens: ["eggs", "mustard"], image: "/assets/img/fries.webp" },
       { name: "Chicken Wings 8pz", description: "Alette di pollo glassate, salsa bbq o buffalo, sedano e dip al blue cheese.", price: 10.0, spicy: true, allergens: ["milk", "celery", "mustard"], image: "/assets/img/wings.webp" },
       { name: "Onion Rings", description: "Anelli di cipolla in pastella alla birra, salsa ranch.", price: 6.5, allergens: ["gluten", "milk", "eggs"], image: "/assets/img/fries.webp" },
       { name: "Mac & Cheese Bites", description: "Bocconcini di mac & cheese fritti, salsa al pomodoro affumicato.", price: 8.0, vegetarian: true, allergens: ["gluten", "milk", "eggs"], image: "/assets/img/fries.webp" },
@@ -119,7 +119,7 @@ const menu = [
   {
     category: "cocktail",
     items: [
-      { name: "Maccanica Sour", description: "Bourbon, limone, sciroppo d'acero, albume, bitter. Il nostro signature.", price: 9.0, featured: true, allergens: ["eggs"], image: "/assets/img/cocktail.webp" },
+      { name: "Meccanica Sour", description: "Bourbon, limone, sciroppo d'acero, albume, bitter. Il nostro signature.", price: 9.0, featured: true, allergens: ["eggs"], image: "/assets/img/cocktail.webp" },
       { name: "Negroni", description: "Gin, Campari, vermouth rosso. Servito con scorza d'arancia.", price: 8.0, allergens: ["sulphites"], image: "/assets/img/cocktail.webp" },
       { name: "Spritz", description: "Aperol, prosecco, soda, arancia.", price: 6.0, allergens: ["sulphites"], image: "/assets/img/cocktail.webp" },
       { name: "Espresso Martini", description: "Vodka, liquore al caffè, espresso, zucchero.", price: 9.0, image: "/assets/img/cocktail.webp" },

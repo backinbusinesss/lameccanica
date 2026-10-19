@@ -21,8 +21,8 @@ export function PrivacyPage() {
           <section>
             <h2 className="font-display text-2xl text-cream">Titolare del trattamento</h2>
             <p className="mt-2">
-              {venue?.name ?? "La Maccanica"} — {venue?.address ?? "Via Tagliamento 16A, Canegrate (MI)"}.
-              Contatti: {venue?.email ?? "info@lamaccanica.it"} · {venue?.phone ?? "0331 055605"}.
+              {venue?.name ?? "La Meccanica"} — {venue?.address ?? "Via Tagliamento 16A, Canegrate (MI)"}.
+              Contatti: {venue?.email ?? "info@arealameccanica.com"} · {venue?.phone ?? "0331 055605"}.
             </p>
           </section>
 
@@ -68,7 +68,7 @@ export function PrivacyPage() {
             <h2 className="font-display text-2xl text-cream">I tuoi diritti</h2>
             <p className="mt-2">
               Puoi chiedere accesso, rettifica, cancellazione, limitazione o portabilità dei dati,
-              oppure opporti al trattamento, scrivendo a {venue?.email ?? "info@lamaccanica.it"}.
+              oppure opporti al trattamento, scrivendo a {venue?.email ?? "info@arealameccanica.com"}.
               Hai inoltre il diritto di proporre reclamo al Garante per la protezione dei dati
               personali.
             </p>

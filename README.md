@@ -1,8 +1,11 @@
-# La Maccanica
+# La Meccanica
 
-Sito ufficiale de **La Maccanica** — burger artigianali, cocktail e live music a Canegrate (MI).
+Sito ufficiale de **La Meccanica** — ristorante, hamburgeria e cocktail bar a Canegrate (MI). Burger artigianali, cocktail, birre artigianali e live music.
 
 Frontend React + Vite, API serverless su Vercel, database Postgres su Neon. Include un'area riservata completa per gestire menu, allergeni, prenotazioni e contenuti senza toccare il codice.
+
+**Live:** https://lameccanica.vercel.app
+**Admin:** https://lameccanica.vercel.app/admin
 
 ---
 
@@ -129,4 +132,4 @@ curl https://<dominio>/api/content
 - Rate limiting su login e prenotazioni (tabella `login_attempts`).
 - Tutti gli endpoint `/api/admin/*` e le mutazioni richiedono sessione valida.
 
-> **Nota:** cambia subito la password di default `admin@lamaccanica.it` / `Maccanica2026!` dal database o tramite lo script di setup, prima di condividere l'URL pubblico.
+> **Nota:** cambia subito la password di default `admin@arealameccanica.com` / `Meccanica2026!` dal database o tramite lo script di setup, prima di condividere l'URL pubblico.

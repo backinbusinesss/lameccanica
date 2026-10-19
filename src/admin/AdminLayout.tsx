@@ -66,7 +66,7 @@ export function AdminLayout({
         >
           <div className="flex items-center justify-between px-5 py-5">
             <div>
-              <p className="font-display text-lg leading-none">La Maccanica</p>
+              <p className="font-display text-lg leading-none">La Meccanica</p>
               <p className="mt-1 text-[0.55rem] font-bold tracking-[0.24em] text-ember uppercase">
                 Backoffice
               </p>

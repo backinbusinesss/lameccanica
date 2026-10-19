@@ -1,9 +1,9 @@
 {
-  "name": "lamaccanica",
+  "name": "lameccanica",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "La Maccanica — Burger, cocktail e live music. Sito ufficiale con menu dinamico, allergeni, prenotazioni e area admin.",
+  "description": "La Meccanica — Burger, cocktail e live music. Sito ufficiale con menu dinamico, allergeni, prenotazioni e area admin.",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build",

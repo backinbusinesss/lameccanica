@@ -113,15 +113,28 @@ public/assets/img/   immagini del sito
 
 ## Deploy
 
+Il deploy di produzione è automatico: ogni push su `main` esegue il workflow
+`.github/workflows/deploy.yml` (GitHub Actions → `vercel build` + `vercel deploy --prod`).
+
+In alternativa, da locale:
+
 ```bash
 vercel --prod
 ```
 
-Il progetto è già collegato a Neon e Vercel Blob. Dopo il primo deploy verifica:
+Il progetto è già collegato a Neon e Vercel Blob. Dopo il deploy verifica:
 
 ```bash
-curl https://<dominio>/api/content
+curl https://lameccanica.vercel.app/api/content
 ```
+
+### Credenziali admin
+
+- **Email:** `admin@arealameccanica.com`
+- **Password:** `Meccanica2026!`
+
+> Il menu iniziale (35 piatti) è un contenuto dimostrativo: puoi modificarlo, aggiungerne o
+> rimuoverne dall'area **Menu & allergeni** senza toccare il codice.
 
 ---
 

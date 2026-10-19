@@ -33,7 +33,7 @@ jobs:
         run: npx vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
 
       - name: Build
-        run: npm run build
+        run: npx vercel build --prod --token="$VERCEL_TOKEN"
 
       - name: Deploy to production
         run: npx vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"

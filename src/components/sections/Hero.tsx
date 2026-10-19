@@ -138,7 +138,7 @@ export function Hero() {
                 ? "Oggi chiuso"
                 : todayRow
                   ? `Oggi ${[todayRow.lunchOpen, todayRow.dinnerOpen].filter(Boolean).join(" · ")}`
-                  : "Aperti da mercoledì a domenica"}
+                  : "Aperti a pranzo e cena"}
             </span>
             <span className="hidden h-3 w-px bg-cream/20 sm:block" />
             <span>Via Tagliamento 16A · Canegrate</span>

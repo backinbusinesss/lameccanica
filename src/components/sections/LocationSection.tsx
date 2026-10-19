@@ -29,7 +29,7 @@ export function LocationSection() {
           eyebrow="Dove siamo"
           title="Due passi dalla"
           italic="stazione"
-          description="A Canegrate, tra Legnano e Parabiago. Parcheggio libero in zona, treno a 5 minuti a piedi."
+          description="A Canegrate, tra Legnano e Parabiago. Via Tagliamento 16A, con parcheggio in zona."
         />
 
         <div className="mt-12 grid gap-5 lg:grid-cols-12">
